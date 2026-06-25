@@ -24,9 +24,9 @@ repository               : "juliajesionek/homepage.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Julia Jesionek"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD candidate in Economics at the Gent University"
   location         : "Ghent, Belgium"
   employer         : "Ghent University"
   uri              : # URL

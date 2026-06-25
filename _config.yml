@@ -23,7 +23,7 @@ repository               : "juliajesionek/homepage.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "photo1.jpeg"
   name             : "Julia Jesionek"
   pronouns         : # example: "she/her"  
   bio              : "PhD candidate in Economics at the Gent University"

@@ -59,21 +59,23 @@ author_profile: true
         {% assign title_shown = true %}
       {% endunless %}
 
-      {% if post.category == 'current_projects' %}
+      {% if post.category == 'current_projects' or post.category == 'non_academic' %}
         <div class="project-item">
-          <h3 class="archive__item-title">
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>{% if post.paperurl %} <a href="{{ base_path }}{{ post.paperurl }}">(pdf)</a>{% endif %}
-          </h3>
+          <h2 class="archive__item-title">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>{% if post.paperurl %} <a href="{% unless post.paperurl contains "://" %}{{ base_path }}{% endunless %}{{ post.paperurl }}">(pdf)</a>{% endif %}{% if post.secondaryurl %} <a href="{{ post.secondaryurl }}">({{ post.secondarylabel | default: "link" }})</a>{% endif %}
+          </h2>
           {% if post.authors %}
             <p class="project-authors">{{ post.authors }}</p>
           {% endif %}
-          {% if post.abstract %}
-            {% assign abstract_id = post.permalink | slugify %}
-            <p class="project-abstract" id="abstract-{{ abstract_id }}"><strong>Abstract: </strong>{{ post.abstract }}</p>
-            <button class="project-abstract-toggle" onclick="var el=document.getElementById('abstract-{{ abstract_id }}'); var expanded=el.classList.toggle('expanded'); this.textContent = expanded ? 'Show less' : 'Show more';">Show more</button>
-          {% endif %}
-          {% if post.conferences %}
-            <p class="project-conferences">Conferences: {{ post.conferences }}</p>
+          {% if post.category == 'current_projects' %}
+            {% if post.abstract %}
+              {% assign abstract_id = post.permalink | slugify %}
+              <p class="project-abstract" id="abstract-{{ abstract_id }}"><strong>Abstract: </strong>{{ post.abstract }}</p>
+              <button class="project-abstract-toggle" onclick="var el=document.getElementById('abstract-{{ abstract_id }}'); var expanded=el.classList.toggle('expanded'); this.textContent = expanded ? 'Show less' : 'Show more';">Show more</button>
+            {% endif %}
+            {% if post.conferences %}
+              <p class="project-conferences">Conferences: {{ post.conferences }}</p>
+            {% endif %}
           {% endif %}
         </div>
       {% else %}

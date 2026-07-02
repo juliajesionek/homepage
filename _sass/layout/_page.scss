@@ -20,7 +20,7 @@
      susy grid math used by .page/.archive. Reserve enough space here so
      the content column never overlaps it. */
   @media screen and (min-width: $sidebar-screen-min-width) {
-    padding-left: $sidebar-link-max-width + 5em;
+    padding-left: calc(#{$sidebar-link-max-width} + 5em);
   }
 }
 

@@ -86,6 +86,8 @@ author:
 publication_category:
   current_projects:
     title: 'Current Projects'
+  non_academic:
+    title: 'Non-academic Publications'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

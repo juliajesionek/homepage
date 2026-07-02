@@ -2,7 +2,7 @@
   BURGUNDY THEME - LIGHT VERSION
   ========================================================================== */
 /* Color codes used for the theme */
-$primary-color              : #7b1e3a;
+$primary-color              : #550000;
 $dark-primary-color         : mix(#000, $primary-color, 40%);
 $darker-primary-color       : mix(#000, $primary-color, 60%);
 $light-primary-color        : mix(#fff, $primary-color, 50%);
@@ -10,19 +10,19 @@ $lighter-primary-color      : mix(#fff, $primary-color, 90%);
 $background                 : #ffffff;
 $background-light           : #ffffff;
 $background-lighter        : #f7f7f7;
-$text                      : #2e1a20;
-$text-muted                : #6d4a54;
-$link                      : #7b1e3a;
+$text                      : #2b1414;
+$text-muted                : #6d4a4a;
+$link                      : #550000;
 $link-dark                 : mix(#000, $link, 25%);
 $link-light                : mix(#fff, $link, 25%);
-$footer                    : #a8365a;
-$border                    : mix(#fff, #2e1a20, 75%);
-$border-dark               : mix(#fff, #2e1a20, 60%);
+$footer                    : mix(#fff, $primary-color, 45%);
+$border                    : mix(#fff, #2b1414, 75%);
+$border-dark               : mix(#fff, #2b1414, 60%);
 
 /* Color codes used for the site */
 $danger-color               : #e74c3c;
-$info-color                 : #7b1e3a;
-$notice-color               : #a8365a;
+$info-color                 : #550000;
+$notice-color               : mix(#fff, #550000, 45%);
 $success-color              : #2ecc71;
 $warning-color              : #f39c12;
 

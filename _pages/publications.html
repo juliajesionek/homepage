@@ -32,24 +32,6 @@ author_profile: true
   }
   .project-abstract {
     font-size: 0.9em;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-  .project-abstract.expanded {
-    display: block;
-    -webkit-line-clamp: unset;
-  }
-  .project-abstract-toggle {
-    background: none;
-    border: none;
-    padding: 0;
-    margin-top: 0.25em;
-    color: #4a7fbf;
-    cursor: pointer;
-    font-size: 0.9em;
-    text-decoration: underline;
   }
   .project-conferences {
     font-size: 0.8em;
@@ -81,9 +63,7 @@ author_profile: true
           {% endif %}
           {% if post.category == 'current_projects' %}
             {% if post.abstract %}
-              {% assign abstract_id = post.permalink | slugify %}
-              <p class="project-abstract" id="abstract-{{ abstract_id }}"><strong>Abstract: </strong>{{ post.abstract }}</p>
-              <button class="project-abstract-toggle" onclick="var el=document.getElementById('abstract-{{ abstract_id }}'); var expanded=el.classList.toggle('expanded'); this.textContent = expanded ? 'Show less' : 'Show more';">Show more</button>
+              <p class="project-abstract"><strong>Abstract: </strong>{{ post.abstract }}</p>
             {% endif %}
             {% if post.conferences %}
               <p class="project-conferences">Conferences: {{ post.conferences }}</p>

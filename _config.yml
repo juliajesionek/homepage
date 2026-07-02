@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "mint" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "burgundy" # The available themes options are "default", "air", "sunrise", "mint", "dirt", "contrast" and "burgundy"
 title                    : "Julia Jesionek | PhD candidate"
 title_separator          : "-"
 name                     : &name "Julia Jesionek"

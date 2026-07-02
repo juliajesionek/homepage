@@ -14,14 +14,6 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
-
-  /* The sidebar becomes position: fixed at this width (see _sidebar.scss),
-     so it can grow up to $sidebar-link-max-width wide independent of the
-     susy grid math used by .page/.archive. Reserve enough space here so
-     the content column never overlaps it. */
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    padding-left: calc(#{$sidebar-link-max-width} + 5em);
-  }
 }
 
 .page {
@@ -29,7 +21,6 @@
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
-    margin-left: 1.5em;
   }
 
   .page__inner-wrap {

@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Home"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a PhD candidate in Economics at the Gent University under the direction of prof, Yasin Kürşat Önder.
+I am a PhD candidate in Economics at the Gent University under the direction of prof. Yasin Kürşat Önder.
 
 In my PhD dissertation, I study the impact of debt suspension policies on household finance and firms performance and aggregate economy. I use highly granular data and causal micro-data to apply to macro models.
 

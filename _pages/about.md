@@ -15,10 +15,10 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
   <div class="about-column">
     <h2>Interests</h2>
     <ul class="interests-list">
-      <li>Debt</li>
-      <li>Households financial behavior</li>
+      <li>Private debt and default</li>
+      <li>Debt suspension policies</li>
+      <li>Households finance</li>
       <li>Corporate finance</li>
-      <li>Default</li>
       <li>Inequalities</li>
     </ul>
   </div>

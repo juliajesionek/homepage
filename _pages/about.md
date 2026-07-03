@@ -46,6 +46,9 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
 </div>
 
 <style>
+  .page__title {
+    display: none;
+  }
   .about-columns {
     display: flex;
     flex-wrap: wrap;

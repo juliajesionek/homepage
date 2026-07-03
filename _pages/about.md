@@ -27,14 +27,17 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
     <h2>Education</h2>
     <ul class="education-list">
       <li>
-        <strong>Ph.D. in Quantitative Macroeconomics</strong> (in progress)<br />
-        Ghent University <span class="education-date">— since 09/2023</span>
+        <i class="fas fa-graduation-cap education-icon"></i>
+        <strong>Ph.D. in Quantitative Macroeconomics</strong><br />
+        Ghent University <span class="education-date">— 2023–2027 (expected)</span>
       </li>
       <li>
+        <i class="fas fa-graduation-cap education-icon"></i>
         <strong>Research Master's in Models and Methods of Quantitative Economics (QEM)</strong><br />
         Université Catholique de Louvain / Warsaw School of Economics <span class="education-date">— 2019–2021</span>
       </li>
       <li>
+        <i class="fas fa-graduation-cap education-icon"></i>
         <strong>B.A. in Quantitative Methods in Economics and Information Systems</strong><br />
         Warsaw School of Economics, Poland <span class="education-date">— 2016–2019</span>
       </li>
@@ -64,5 +67,9 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
   .education-date {
     color: var(--global-text-color-light);
     font-size: 0.9em;
+  }
+  .education-icon {
+    margin-right: 0.4em;
+    color: var(--global-link-color, #6b7f9e);
   }
 </style>

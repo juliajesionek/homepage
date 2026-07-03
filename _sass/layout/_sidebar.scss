@@ -141,8 +141,8 @@
    ========================================================================== */
 
 .author__profile {
-  display: table;
-  table-layout: fixed;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 
   @include breakpoint($large) {
@@ -151,14 +151,13 @@
 }
 
 .author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 144px;
+  display: block;
+  flex: 0 0 144px;
   // set width only, for non-square avatars
   // height: 36px;
 
   @include breakpoint($large) {
-    display: block;
+    flex: initial;
     width: auto;
     height: auto;
   }
@@ -175,9 +174,9 @@
 }
 
 .author__content {
-  display: table-cell;
-  vertical-align: top;
-  width: auto;
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
@@ -185,7 +184,7 @@
   overflow-wrap: break-word;
 
   @include breakpoint($large) {
-    display: block;
+    flex: initial;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -233,6 +232,8 @@
 .author__urls-wrapper {
   position: relative;
   display: block;
+  flex: 0 0 100%;
+  margin-top: 10px;
   vertical-align: middle;
   font-family: $sans-serif;
   z-index: 10;
@@ -247,6 +248,7 @@
 
   @include breakpoint($large) {
     display: block;
+    margin-top: 0;
   }
 
   button {

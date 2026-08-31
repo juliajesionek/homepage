@@ -7,9 +7,13 @@ redirect_from:
   - /about.html
 ---
 
+<div class="about-intro" markdown="1">
+
 I am a PhD candidate in Economics at the Ghent University under the direction of prof. [Yasin Kürşat Önder](https://sites.google.com/view/yasin-kursat-onder).
 
 In my PhD dissertation, I study the impact of debt suspension policies on household finance and firms performance and aggregate economy. I use highly granular data and causal micro-data to apply to macro models.
+
+</div>
 
 <h2>News</h2>
 <ul class="news-list">
@@ -63,6 +67,27 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
   }
   .about-column {
     flex: 1 1 300px;
+  }
+  /* Align the intro with the sidebar photo (only where the sidebar sits beside the text).
+     --photo-top: the sidebar's padding-top, i.e. how far the photo starts below the text.
+     --photo-height: 200px wide from a 1279x1600 source, plus 5px padding + 1px border. */
+  @media screen and (min-width: 1024px) {
+    .about-intro {
+      --photo-top: 70px;
+      --photo-height: 262px;
+      box-sizing: border-box;
+      padding-top: var(--photo-top);
+      min-height: calc(var(--photo-top) + var(--photo-height));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .about-intro > p:first-child {
+      margin-top: 0;
+    }
+    .about-intro > p:last-child {
+      margin-bottom: 0;
+    }
   }
   .news-list {
     margin: 0.5em 0 1.5em;

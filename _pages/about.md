@@ -73,7 +73,7 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
      --photo-height: 200px wide from a 1279x1600 source, plus 5px padding + 1px border. */
   @media screen and (min-width: 1024px) {
     .about-intro {
-      --photo-top: 35px;
+      --photo-top: 0px;
       --photo-height: 262px;
       box-sizing: border-box;
       padding-top: var(--photo-top);

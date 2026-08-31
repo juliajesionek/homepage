@@ -11,6 +11,12 @@ I am a PhD candidate in Economics at the Ghent University under the direction of
 
 In my PhD dissertation, I study the impact of debt suspension policies on household finance and firms performance and aggregate economy. I use highly granular data and causal micro-data to apply to macro models.
 
+<h2>News</h2>
+<ul class="news-list">
+  <li><strong>August 24–28, 2026</strong> — Participated in the <a href="https://www.ugent.be/eb/economics/en/news-events/news/summerschoolmacro2026">Empirical Macroeconomics Summer School</a>, taught by Professor Christiane Baumeister (University of Notre Dame, NBER, CEPR) and focused on state-of-the-art Bayesian methods for structural VAR analysis.</li>
+  <li><strong>August 2026</strong> — Attended the <a href="https://efa2026.efa-finance.org/program/phd-program/">Pre-EFA PhD Program</a> and the 53rd EFA Annual Meeting in Ghent, where I presented a poster on <em>Corporate Moratoria</em>.</li>
+</ul>
+
 <div class="about-columns">
   <div class="about-column">
     <h2>Interests</h2>
@@ -57,6 +63,13 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
   }
   .about-column {
     flex: 1 1 300px;
+  }
+  .news-list {
+    margin: 0.5em 0 1.5em;
+    padding-left: 1.2em;
+  }
+  .news-list li {
+    margin-bottom: 0.5em;
   }
   .interests-list,
   .education-list {

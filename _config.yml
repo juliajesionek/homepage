@@ -85,6 +85,8 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   current_projects:
+    title: 'Job Market Paper'
+  work_in_progress:
     title: 'Current Projects'
   non_academic:
     title: 'Non-academic Publications'

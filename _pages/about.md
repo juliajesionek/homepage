@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="about-intro" markdown="1">
 
-I am a PhD candidate in Economics at the Ghent University under the direction of prof. [Yasin Kürşat Önder](https://sites.google.com/view/yasin-kursat-onder). **I will be on the 2026–2027 academic job market.**
+I am a PhD candidate in Economics at the Ghent University under the direction of prof. [Yasin Kürşat Önder](https://sites.google.com/view/yasin-kursat-onder). **I am on the 2026–2027 job market.**
 
 **Job Market Paper:** [Mortgage Moratoria as Fiscal-free Stimulus: Evidence from Belgium](/files/Belgian_Mortgage_Moratoria_WP.pdf) (pdf)
 

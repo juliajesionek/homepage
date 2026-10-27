@@ -77,6 +77,12 @@
     font-size: 0.9em;
     margin: 0;
   }
+  ul.project-figure-text {
+    padding-left: 1.2em;
+  }
+  ul.project-figure-text li {
+    margin-bottom: 0.4em;
+  }
 </style>
 
 {% assign wanted_categories = include.categories | split: "," %}
@@ -105,11 +111,16 @@
         {% endif %}
         {% if post.figure %}
           <div class="project-figure-row">
-            <figure class="project-figure">
+            <figure class="project-figure"{% if post.figure_width %} style="flex-basis: {{ post.figure_width }}"{% endif %}>
               <a href="{{ base_path }}/images/{{ post.figure }}" class="figure-zoom" title="Click to enlarge"><img src="{{ base_path }}/images/{{ post.figure }}" alt="{{ post.figure_alt }}" loading="lazy" /></a>
               {% if post.figure_caption %}<figcaption>{{ post.figure_caption }}</figcaption>{% endif %}
             </figure>
             {% if post.figure_text %}<p class="project-figure-text">{{ post.figure_text }}</p>{% endif %}
+            {% if post.figure_points %}
+              <ul class="project-figure-text">
+                {% for point in post.figure_points %}<li>{{ point }}</li>{% endfor %}
+              </ul>
+            {% endif %}
           </div>
         {% endif %}
         {% if post.category == 'current_projects' %}

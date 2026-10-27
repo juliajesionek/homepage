@@ -33,6 +33,31 @@
     color: #666;
     margin-top: 0.75em;
   }
+  .project-figure-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .project-figure {
+    flex: 1 1 260px;
+    max-width: 360px;
+    margin: 0;
+  }
+  .project-figure img {
+    width: 100%;
+    height: auto;
+  }
+  .project-figure figcaption {
+    font-size: 0.7em;
+    color: #666;
+    margin-top: 0.25em;
+  }
+  .project-figure-text {
+    flex: 1 1 260px;
+    font-size: 0.9em;
+    margin: 0;
+  }
 </style>
 
 {% assign wanted_categories = include.categories | split: "," %}
@@ -58,6 +83,15 @@
         </h2>
         {% if post.authors %}
           <p class="project-authors">{{ post.authors }}</p>
+        {% endif %}
+        {% if post.figure %}
+          <div class="project-figure-row">
+            <figure class="project-figure">
+              <img src="{{ base_path }}/images/{{ post.figure }}" alt="{{ post.figure_alt }}" loading="lazy" />
+              {% if post.figure_caption %}<figcaption>{{ post.figure_caption }}</figcaption>{% endif %}
+            </figure>
+            {% if post.figure_text %}<p class="project-figure-text">{{ post.figure_text }}</p>{% endif %}
+          </div>
         {% endif %}
         {% if post.category == 'current_projects' %}
           {% if post.abstract %}

@@ -11,7 +11,7 @@ redirect_from:
 
 I am a PhD candidate in Economics at the Ghent University under the direction of prof. [Yasin Kürşat Önder](https://sites.google.com/view/yasin-kursat-onder). **I am on the 2026–2027 job market.**
 
-**Job Market Paper:** [Mortgage Moratoria as Fiscal-free Stimulus: Evidence from Belgium]({{ site.baseurl }}/files/Belgian_Mortgage_Moratoria_WP.pdf) (pdf)
+**Job Market Paper:** Mortgage Moratoria as Fiscal-free Stimulus: Evidence from Belgium [(pdf)]({{ site.baseurl }}/files/Belgian_Mortgage_Moratoria_WP.pdf)
 
 In my PhD dissertation, I study the impact of debt suspension policies on household finance and firms performance and aggregate economy. I use highly granular data and causal micro-data to apply to macro models.
 

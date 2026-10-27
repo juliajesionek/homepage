@@ -37,3 +37,9 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* Slightly smaller text in the page body; the sidebar and top menu keep the base size */
+.page__content,
+.archive {
+  font-size: 0.92em;
+}

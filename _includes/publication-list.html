@@ -54,7 +54,7 @@
     {% if post.category == 'current_projects' or post.category == 'work_in_progress' or post.category == 'non_academic' %}
       <div class="project-item">
         <h2 class="archive__item-title">
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>{% if post.paperurl %} <a href="{% unless post.paperurl contains "://" %}{{ base_path }}{% endunless %}{{ post.paperurl }}">(pdf)</a>{% endif %}{% if post.secondaryurl %} <a href="{{ post.secondaryurl }}">({{ post.secondarylabel | default: "link" }})</a>{% endif %}
+          {% if post.paperurl %}<a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}{% if post.paperurl %} <a href="{% unless post.paperurl contains "://" %}{{ base_path }}{% endunless %}{{ post.paperurl }}">(pdf)</a>{% endif %}{% if post.secondaryurl %} <a href="{{ post.secondaryurl }}">({{ post.secondarylabel | default: "link" }})</a>{% endif %}
         </h2>
         {% if post.authors %}
           <p class="project-authors">{{ post.authors }}</p>

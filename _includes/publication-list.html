@@ -48,6 +48,25 @@
     width: 100%;
     height: auto;
   }
+  .figure-zoom {
+    cursor: zoom-in;
+  }
+  .figure-lightbox {
+    border: none;
+    padding: 0;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: transparent;
+  }
+  .figure-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+  .figure-lightbox img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    cursor: zoom-out;
+  }
   .project-figure figcaption {
     font-size: 0.7em;
     color: #666;
@@ -87,7 +106,7 @@
         {% if post.figure %}
           <div class="project-figure-row">
             <figure class="project-figure">
-              <img src="{{ base_path }}/images/{{ post.figure }}" alt="{{ post.figure_alt }}" loading="lazy" />
+              <a href="{{ base_path }}/images/{{ post.figure }}" class="figure-zoom" title="Click to enlarge"><img src="{{ base_path }}/images/{{ post.figure }}" alt="{{ post.figure_alt }}" loading="lazy" /></a>
               {% if post.figure_caption %}<figcaption>{{ post.figure_caption }}</figcaption>{% endif %}
             </figure>
             {% if post.figure_text %}<p class="project-figure-text">{{ post.figure_text }}</p>{% endif %}
@@ -110,3 +129,25 @@
     {% endif %}
   {% endfor %}
 {% endfor %}
+
+<dialog class="figure-lightbox"><img src="" alt="" /></dialog>
+
+<script>
+  (function () {
+    var lightbox = document.querySelector('.figure-lightbox');
+    if (!lightbox || !lightbox.showModal) return;
+    var fullImage = lightbox.querySelector('img');
+    document.querySelectorAll('.figure-zoom').forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        var thumb = link.querySelector('img');
+        fullImage.src = link.href;
+        fullImage.alt = thumb ? thumb.alt : '';
+        lightbox.showModal();
+      });
+    });
+    lightbox.addEventListener('click', function () {
+      lightbox.close();
+    });
+  })();
+</script>

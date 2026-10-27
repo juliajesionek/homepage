@@ -87,9 +87,9 @@ publication_category:
   current_projects:
     title: 'Job Market Paper'
   work_in_progress:
-    title: 'Current Projects'
+    title: 'Work in Progress'
   non_academic:
-    title: 'Non-academic Publications'
+    title: 'Policy Work'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

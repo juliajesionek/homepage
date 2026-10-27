@@ -19,6 +19,7 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
 
 <h2>News</h2>
 <ul class="news-list">
+  <li><strong>October 8–9, 2026</strong> — Attended the <a href="https://www.nbb.be/doc/ts/enterprise/conferences/colloquium-2026/conference_2026_programme.pdf">NBB Conference 2026</a> of the National Bank of Belgium on <em>Fiscal-monetary policy interactions in the 21st century</em>.</li>
   <li><strong>August 24–28, 2026</strong> — Participated in the <a href="https://www.ugent.be/eb/economics/en/news-events/news/summerschoolmacro2026">Empirical Macroeconomics Summer School</a>, taught by Professor Christiane Baumeister (University of Notre Dame, NBER, CEPR) and focused on state-of-the-art Bayesian methods for structural VAR analysis.</li>
   <li><strong>August 2026</strong> — Attended the <a href="https://efa2026.efa-finance.org/program/phd-program/">Pre-EFA PhD Program</a> and the 53rd EFA Annual Meeting in Ghent, where I presented a poster on <em>Corporate Moratoria</em>.</li>
 </ul>
@@ -106,6 +107,10 @@ In my PhD dissertation, I study the impact of debt suspension policies on househ
   .interests-list li,
   .education-list li {
     margin-bottom: 0.5em;
+  }
+  .education-list {
+    list-style: none;
+    padding-left: 0;
   }
   .education-date {
     color: var(--global-text-color-light);

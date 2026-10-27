@@ -33,6 +33,18 @@
     color: #666;
     margin-top: 0.75em;
   }
+  .project-details summary {
+    cursor: pointer;
+    font-size: 0.85em;
+    margin-bottom: 0.75em;
+  }
+  .project-details .when-open,
+  .project-details[open] .when-closed {
+    display: none;
+  }
+  .project-details[open] .when-open {
+    display: inline;
+  }
   .project-figure-row {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +122,8 @@
           <p class="project-authors">{{ post.authors }}</p>
         {% endif %}
         {% if post.figure %}
+          <details class="project-details">
+          <summary><span class="when-closed">Show summary</span><span class="when-open">Hide summary</span></summary>
           <div class="project-figure-row">
             <figure class="project-figure"{% if post.figure_width %} style="flex-basis: {{ post.figure_width }}"{% endif %}>
               <a href="{{ base_path }}/images/{{ post.figure }}" class="figure-zoom" title="Click to enlarge"><img src="{{ base_path }}/images/{{ post.figure }}" alt="{{ post.figure_alt }}" loading="lazy" /></a>
@@ -122,6 +136,7 @@
               </ul>
             {% endif %}
           </div>
+          </details>
         {% endif %}
         {% if post.category == 'current_projects' %}
           {% if post.abstract %}
